@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RUmi | Welcome</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/vendor/modernizr.js"></script>
+    {{ HTML::style('css/foundation.css')}}
+    {{ HTML::style('css/styles.css')}}
+    <script src="{{URL::asset('js/vendor/modernizr.js')}}"></script>
   </head>
   <body>
 
@@ -117,8 +117,8 @@
   <input type="hidden">
 </div>
     
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="{{URL::asset('js/vendor/jquery.js')}}"></script>
+    <script src="{{URL::asset('js/foundation.min.js')}}"></script>
     <script>
       $(document).foundation();
     </script>
